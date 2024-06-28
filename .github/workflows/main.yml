@@ -35,6 +35,6 @@ jobs:
           docker buildx build --push \
             --provenance=false \
             --platform linux/amd64,linux/arm64 \
-            --tag zoraxydocker/zoraxy:${{ github.event.release.tag_name }} \
-            --tag zoraxydocker/zoraxy:latest \
+            --tag hyst10/zoraxy:${{ github.event.release.tag_name }} \
+            --tag hyst10/zoraxy:latest \
             .
