@@ -30,7 +30,7 @@ jobs:
       - name: Build the image
         run: |
           cd $GITHUB_WORKSPACE/docker/
-          docker buildx create --name mainbuilder --driver docker-container --platform linux/amd64,linux/arm64 --use
+          docker buildx create --name mainbuilder --driver docker-container --platform linux/amd64,linux/arm64,linux/s390x --use
           
           docker buildx build --push \
             --provenance=false \
