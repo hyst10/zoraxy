@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file ./docker/Dockerfile --tag qemu-novnc:xp
+      run: docker build . --file ./docker/Dockerfile --tag zoraxy:v1.0
 
     - name: Upload image
       uses: ishworkh/docker-image-artifact-upload@v2.0.1
