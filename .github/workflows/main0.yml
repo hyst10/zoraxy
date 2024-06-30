@@ -20,5 +20,5 @@ jobs:
     - name: Upload image
       uses: ishworkh/docker-image-artifact-upload@v2.0.1
       with:
-        image: "Zoraxy:v1.0"
+        image: "zoraxy:v1.0"
         retention_days: "15"
